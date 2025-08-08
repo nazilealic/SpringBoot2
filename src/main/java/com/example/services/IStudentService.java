@@ -2,17 +2,20 @@ package com.example.services;
 
 import java.util.List;
 
+import com.example.dto.DtoStudent;
+import com.example.dto.DtoStudentIU;
 import com.example.entites.Student;
 
 public interface IStudentService {
 
-	public Student saveStudent(Student student);
+	public DtoStudent saveStudent(DtoStudentIU student);
 	
-	public List<Student> getAllStudents();
+	public List<DtoStudent> getAllStudents();
 	
-	public Student getStudentById(Integer id);
+	public DtoStudent getStudentById(Integer id);
 	
 	public void deleteStudent(Integer id);
 	
-	public Student upDateStudent(Integer id , Student updateStudent);
+	public DtoStudent upDateStudent(Integer id , DtoStudentIU dtoStudentIU);
+	
 }

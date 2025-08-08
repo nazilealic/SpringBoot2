@@ -2,17 +2,19 @@ package com.example.controller;
 
 import java.util.List;
 
+import com.example.dto.DtoStudent;
+import com.example.dto.DtoStudentIU;
 import com.example.entites.Student;
 
 public interface IStudentController {
 
-	public Student saveStudent(Student student);
+	public DtoStudent saveStudent(DtoStudentIU dtoStudentIU);
 	
-	public List<Student> getAllStudents();
+	public List<DtoStudent> getAllStudents();
 	
-	public Student getStudentById(Integer id);
+	public DtoStudent getStudentById(Integer id);
 	
 	public void deleteStudent(Integer id);
 	
-	public Student updateStudent(Integer id , Student updateStudent);
+	public DtoStudent updateStudent(Integer id , DtoStudentIU dtoStudentIU);
 }
